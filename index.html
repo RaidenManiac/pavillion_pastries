@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pavillion Pastries — Greek roots, Toronto heart. Coffee, pastries and good mornings on the Danforth." />
+  <title>Pavillion Pastries — Toronto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="announcement">Fresh from the oven daily · Open from 5am</div>
+  <header class="nav-wrap">
+    <a class="brand" href="#top" aria-label="Pavillion Pastries home">
+      <span class="brand-mark">P</span><span>Pavillion<br><em>Pastries</em></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#story">Our story</a><a href="#menu">Menu</a><a href="#visit">Visit</a>
+    </nav>
+    <a class="button button-light" href="tel:+14169013001">Call to order</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Greek roots · Toronto heart</p>
+        <h1>Good mornings<br>start <em>here.</em></h1>
+        <p class="hero-copy">Golden pastries, proper coffee, and recipes that carry a little history in every bite.</p>
+        <div class="hero-actions"><a class="button button-cream" href="#menu">Explore the menu</a><a class="text-link" href="#visit">Find us on Danforth <span>↗</span></a></div>
+      </div>
+      <p class="scroll-note">Scroll to discover <span>↓</span></p>
+    </section>
+
+    <section class="intro" id="story">
+      <div class="intro-label"><span>01</span><p>Our story</p></div>
+      <div class="intro-copy reveal">
+        <p class="eyebrow olive">Two women. One shared table.</p>
+        <h2>Born from <em>tradition,</em><br>made for the neighbourhood.</h2>
+        <div class="story-columns"><p>Founded by two women from Greece, Pavillion brings the warmth of Mediterranean baking to Toronto. Every flaky layer and aromatic dessert is made with care, quality ingredients, and respect for the craft.</p><p>Greek family recipes meet Canadian favourites and flavours from around the world—a menu that feels just like the Danforth: familiar, generous, and wonderfully diverse.</p></div>
+      </div>
+    </section>
+
+    <section class="quote-band"><p>“Food is more than flavour—<br><em>it’s connection.</em>”</p><span>Made with care on the Danforth</span></section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-head reveal">
+        <div><p class="eyebrow olive">From our counter</p><h2>A menu for every<br><em>kind of morning.</em></h2></div>
+        <p>Prices reflect the in-store menu provided and may change. Ask us about today’s pastries and availability.</p>
+      </div>
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="active" role="tab" aria-selected="true" data-menu="coffee">Coffee & tea</button>
+        <button role="tab" aria-selected="false" data-menu="cold">Cold drinks</button>
+        <button role="tab" aria-selected="false" data-menu="smoothies">Smoothies & shakes</button>
+        <button role="tab" aria-selected="false" data-menu="sweets">Sweets</button>
+      </div>
+      <div class="menu-panel active" id="coffee" role="tabpanel">
+        <div class="menu-column"><h3>Coffee <small>S / M / L</small></h3>
+          <div class="item"><b>Café au lait</b><span>$2.25 / $2.55 / $2.75</span></div>
+          <div class="item"><b>Café mocha</b><span>$3.25 / $4.25</span></div>
+          <div class="item"><b>Café caramela</b><span>$3.75 / $4.75</span></div>
+          <div class="item"><b>Café float</b><i>Made with vanilla ice cream</i><span>$4.95</span></div>
+          <div class="item"><b>Choco Kick</b><i>Ice cream, steamed milk & Nutella</i><span>$6.95</span></div>
+          <div class="item"><b>Affogato</b><i>With vanilla ice cream</i><span>$5.95</span></div>
+        </div>
+        <div class="menu-column"><h3>Espresso <small>Single / Double</small></h3>
+          <div class="item"><b>Espresso</b><span>$3.50 / $4.50</span></div>
+          <div class="item"><b>Americano</b><span>$4.50</span></div>
+          <div class="item"><b>Latte</b><span>$4.95 / $5.95</span></div>
+          <div class="item"><b>Cappuccino</b><span>$4.95 / $5.95</span></div>
+          <div class="item"><b>Macchiato</b><span>$3.75</span></div>
+          <div class="item"><b>Mocha cappuccino</b><span>$5.50 / $6.50</span></div>
+          <div class="item"><b>Vietnamese espresso</b><span>$5.50 / $6.50</span></div>
+        </div>
+        <div class="menu-column wide"><h3>Tea <small>Small / Large</small></h3>
+          <div class="item"><b>Regular tea</b><span>$2.55</span></div><div class="item"><b>Herbal tea</b><span>$3.25</span></div><div class="item"><b>Matcha latte</b><span>$5.50 / $6.25</span></div><div class="item"><b>Chai latte</b><span>$5.50 / $6.25</span></div><div class="item"><b>London fog</b><span>$5.50 / $6.25</span></div>
+        </div>
+        <p class="menu-note">Add a flavour shot +$0.85</p>
+      </div>
+      <div class="menu-panel" id="cold" role="tabpanel">
+        <div class="menu-column wide"><h3>Cold coffee</h3>
+          <div class="item"><b>Iced café au lait</b><span>$2.75</span></div><div class="item"><b>Iced café mocha</b><span>$4.25</span></div><div class="item"><b>Iced café caramela</b><span>$4.75</span></div><div class="item"><b>Frappé</b><span>$4.75</span></div><div class="item"><b>Iced Vietnamese espresso</b><span>$5.00</span></div><div class="item"><b>Iced Americano</b><span>$5.25</span></div><div class="item"><b>Iced latte</b><span>$4.75</span></div><div class="item"><b>Iced mocha</b><span>$5.75</span></div><div class="item"><b>Iced chai latte</b><span>$6.25</span></div>
+        </div>
+      </div>
+      <div class="menu-panel" id="smoothies" role="tabpanel">
+        <div class="menu-column"><h3>Fruit smoothies <small>100% real fruit</small></h3>
+          <div class="item"><b>Strawberry Banana Classic</b><i>Strawberries, banana & apple juice</i><span>$7.25</span></div><div class="item"><b>Berry Boost</b><i>Mixed berries blended with apple juice</i><span>$7.25</span></div><div class="item"><b>Mango</b><i>Mango with apple juice</i><span>$7.25</span></div>
+        </div>
+        <div class="menu-column"><h3>Fruit shakes <small>Milk, ice cream & real fruit</small></h3>
+          <div class="item"><b>Strawberry Banana Classic</b><span>$8.25</span></div><div class="item"><b>Berry Boost</b><span>$8.25</span></div><div class="item"><b>Mango</b><span>$8.25</span></div><p class="menu-note">Add protein powder +$2.00</p>
+        </div>
+      </div>
+      <div class="menu-panel" id="sweets" role="tabpanel">
+        <div class="menu-column wide"><h3>From the pastry case <small>Selection changes daily</small></h3>
+          <div class="item"><b>Tornado cake</b><span>$5.50</span></div><div class="item"><b>Carrot cake</b><span>$4.50</span></div><div class="item"><b>Greek cake</b><span>$4.50</span></div><div class="item"><b>Baklava</b><span>$4.50</span></div><div class="item"><b>Cheesecake</b><span>$6.00</span></div><div class="item"><b>Custard</b><span>$2.75</span></div><div class="item"><b>Date squares</b><span>$2.75</span></div><div class="item"><b>Banana bread</b><span>$3.50</span></div><div class="item"><b>Brownies</b><span>$3.50</span></div><div class="item"><b>Apple turnovers</b><span>$3.75</span></div><div class="item"><b>Loukoumades</b><span>$6.50</span></div><div class="item"><b>Bread pudding</b><span>$3.50</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="visit-card reveal"><p class="eyebrow">Come grab a cup</p><h2>Your table is<br><em>waiting.</em></h2><address>2554 Danforth Avenue<br>Toronto, Ontario</address><div class="visit-links"><a href="https://maps.google.com/?q=2554+Danforth+Avenue+Toronto" target="_blank" rel="noreferrer">Get directions ↗</a><a href="tel:+14169013001">416 901 3001</a></div></div>
+      <div class="hours"><p class="eyebrow olive">Hours</p><div><span>Monday — Sunday</span><b>5:00am — 7:00pm</b></div><small>Hours may vary on holidays</small></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand-mark">P</span><span>Pavillion<br><em>Pastries</em></span></a><p>Greek roots. Toronto heart.<br>Made fresh, every day.</p><p class="copyright">© 2026 Pavillion Pastries</p></footer>
+  <script type="module" src="/script.js"></script>
+</body>
+</html>
