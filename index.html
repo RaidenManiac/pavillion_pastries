@@ -4,13 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Pavillion Pastries — Greek roots, Toronto heart. Coffee, pastries and good mornings on the Danforth." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pavillion Pastries — Toronto" />
+  <meta property="og:description" content="Greek roots, Toronto heart. Coffee, pastries and good mornings on the Danforth." />
+  <meta property="og:url" content="https://raidenmaniac.github.io/pavillion_pastries/" />
+  <meta property="og:image" content="https://raidenmaniac.github.io/pavillion_pastries/og-pavillion.webp" />
+  <link rel="canonical" href="https://raidenmaniac.github.io/pavillion_pastries/" />
   <title>Pavillion Pastries — Toronto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="preload" href="/assets/hero-pastries.webp" as="image" type="image/webp" fetchpriority="high" />
   <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Bakery", "CafeOrCoffeeShop"],
+    "name": "Pavillion Pastries",
+    "description": "A Greek-Canadian neighbourhood bakery and café serving pastries, coffee, tea, smoothies and sweets on the Danforth.",
+    "url": "https://raidenmaniac.github.io/pavillion_pastries/",
+    "telephone": "+1-416-901-3001",
+    "image": "https://raidenmaniac.github.io/pavillion_pastries/og-pavillion.webp",
+    "priceRange": "$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2554 Danforth Avenue",
+      "addressLocality": "Toronto",
+      "addressRegion": "ON",
+      "addressCountry": "CA"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "05:00",
+      "closes": "19:00"
+    }],
+    "servesCuisine": ["Greek", "Canadian", "Bakery", "Coffee"]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#top">Skip to main content</a>
   <div class="announcement">Fresh from the oven daily · Open from 5am</div>
   <header class="nav-wrap">
     <a class="brand" href="#top" aria-label="Pavillion Pastries home">
@@ -52,12 +89,12 @@
         <p>Prices reflect the in-store menu provided and may change. Ask us about today’s pastries and availability.</p>
       </div>
       <div class="menu-tabs" role="tablist" aria-label="Menu categories">
-        <button class="active" role="tab" aria-selected="true" data-menu="coffee">Coffee & tea</button>
-        <button role="tab" aria-selected="false" data-menu="cold">Cold drinks</button>
-        <button role="tab" aria-selected="false" data-menu="smoothies">Smoothies & shakes</button>
-        <button role="tab" aria-selected="false" data-menu="sweets">Sweets</button>
+        <button id="tab-coffee" class="active" role="tab" aria-selected="true" aria-controls="coffee" tabindex="0" data-menu="coffee">Coffee & tea</button>
+        <button id="tab-cold" role="tab" aria-selected="false" aria-controls="cold" tabindex="-1" data-menu="cold">Cold drinks</button>
+        <button id="tab-smoothies" role="tab" aria-selected="false" aria-controls="smoothies" tabindex="-1" data-menu="smoothies">Smoothies & shakes</button>
+        <button id="tab-sweets" role="tab" aria-selected="false" aria-controls="sweets" tabindex="-1" data-menu="sweets">Sweets</button>
       </div>
-      <div class="menu-panel active" id="coffee" role="tabpanel">
+      <div class="menu-panel active" id="coffee" role="tabpanel" aria-labelledby="tab-coffee">
         <div class="menu-column"><h3>Coffee <small>S / M / L</small></h3>
           <div class="item"><b>Café au lait</b><span>$2.25 / $2.55 / $2.75</span></div>
           <div class="item"><b>Café mocha</b><span>$3.25 / $4.25</span></div>
@@ -80,12 +117,12 @@
         </div>
         <p class="menu-note">Add a flavour shot +$0.85</p>
       </div>
-      <div class="menu-panel" id="cold" role="tabpanel">
+      <div class="menu-panel" id="cold" role="tabpanel" aria-labelledby="tab-cold" hidden>
         <div class="menu-column wide"><h3>Cold coffee</h3>
           <div class="item"><b>Iced café au lait</b><span>$2.75</span></div><div class="item"><b>Iced café mocha</b><span>$4.25</span></div><div class="item"><b>Iced café caramela</b><span>$4.75</span></div><div class="item"><b>Frappé</b><span>$4.75</span></div><div class="item"><b>Iced Vietnamese espresso</b><span>$5.00</span></div><div class="item"><b>Iced Americano</b><span>$5.25</span></div><div class="item"><b>Iced latte</b><span>$4.75</span></div><div class="item"><b>Iced mocha</b><span>$5.75</span></div><div class="item"><b>Iced chai latte</b><span>$6.25</span></div>
         </div>
       </div>
-      <div class="menu-panel" id="smoothies" role="tabpanel">
+      <div class="menu-panel" id="smoothies" role="tabpanel" aria-labelledby="tab-smoothies" hidden>
         <div class="menu-column"><h3>Fruit smoothies <small>100% real fruit</small></h3>
           <div class="item"><b>Strawberry Banana Classic</b><i>Strawberries, banana & apple juice</i><span>$7.25</span></div><div class="item"><b>Berry Boost</b><i>Mixed berries blended with apple juice</i><span>$7.25</span></div><div class="item"><b>Mango</b><i>Mango with apple juice</i><span>$7.25</span></div>
         </div>
@@ -93,7 +130,7 @@
           <div class="item"><b>Strawberry Banana Classic</b><span>$8.25</span></div><div class="item"><b>Berry Boost</b><span>$8.25</span></div><div class="item"><b>Mango</b><span>$8.25</span></div><p class="menu-note">Add protein powder +$2.00</p>
         </div>
       </div>
-      <div class="menu-panel" id="sweets" role="tabpanel">
+      <div class="menu-panel" id="sweets" role="tabpanel" aria-labelledby="tab-sweets" hidden>
         <div class="menu-column wide"><h3>From the pastry case <small>Selection changes daily</small></h3>
           <div class="item"><b>Tornado cake</b><span>$5.50</span></div><div class="item"><b>Carrot cake</b><span>$4.50</span></div><div class="item"><b>Greek cake</b><span>$4.50</span></div><div class="item"><b>Baklava</b><span>$4.50</span></div><div class="item"><b>Cheesecake</b><span>$6.00</span></div><div class="item"><b>Custard</b><span>$2.75</span></div><div class="item"><b>Date squares</b><span>$2.75</span></div><div class="item"><b>Banana bread</b><span>$3.50</span></div><div class="item"><b>Brownies</b><span>$3.50</span></div><div class="item"><b>Apple turnovers</b><span>$3.75</span></div><div class="item"><b>Loukoumades</b><span>$6.50</span></div><div class="item"><b>Bread pudding</b><span>$3.50</span></div>
         </div>

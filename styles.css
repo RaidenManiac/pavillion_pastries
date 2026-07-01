@@ -6,3 +6,16 @@
 .menu-column h3{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
 .menu-column h3 small{float:none;margin-top:0;line-height:1.35;text-align:right;white-space:nowrap;padding-bottom:3px}
 @media(max-width:760px){.menu-column h3{align-items:flex-start;flex-direction:column;gap:7px}.menu-column h3 small{text-align:left;white-space:normal;padding-bottom:0}.menu-column .item{width:100%}}
+
+/* Performance and accessibility hardening. */
+.hero{background-image:url('/assets/hero-pastries.webp')}
+.skip-link{position:fixed;top:12px;left:12px;z-index:1000;padding:12px 16px;background:#fff;color:#111;transform:translateY(-160%);transition:transform .15s ease}
+.skip-link:focus{transform:translateY(0)}
+:focus-visible{outline:3px solid #f2b35f;outline-offset:4px}
+.menu-tabs button{min-height:44px;padding:0 4px 12px}
+.menu-toggle{min-height:44px;min-width:44px}
+.item i,.section-head>p,.story-columns p{color:#4f4f49}
+.hours small{color:#62625d}
+.reveal{opacity:1;transform:none}
+.menu-panel[hidden]{display:none}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://raidenmaniac.github.io/pavillion_pastries/sitemap.xml
